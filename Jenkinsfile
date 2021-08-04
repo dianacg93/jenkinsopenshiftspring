@@ -44,7 +44,7 @@ pipeline {
         //sh "oc get service mongo || oc new-app mongo"
         sh "oc delete all --selector app=${projectName} || echo 'Unable to delete all previous openshift resources'"
         sh "oc new-app ${dockerImageTag} -l version=${version}" //" -e DB_HOST=mongo"
-        sh "sleep 60"
+        //sh "sleep 60"
         sh "oc expose svc/${projectName}"
       }
     }
