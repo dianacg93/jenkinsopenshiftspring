@@ -49,12 +49,12 @@ pipeline {
     }
   }
 
-  post {
+  //post {
     //always {
       //archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
       //archiveArtifacts artifacts: 'target/site/jacoco/**/*'
       //archiveArtifacts 'target/surefire-reports/**/*'
     //}
-  }
+  //}
 }
 
