@@ -4,9 +4,9 @@ def dockerImageTag = "${projectName}:${version}"
 
 pipeline {
   agent any
-  environment{
+  //environment{
       //DOCKER_CRED = credentials('docker-cred')
-  }
+  //}
 
   stages {
 /*    stage('Test') {
